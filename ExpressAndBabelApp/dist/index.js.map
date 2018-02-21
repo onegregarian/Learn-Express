@@ -1,1 +1,0 @@
-{"version":3,"sources":["../server/index.js"],"names":[],"mappings":";;AAAC;;;;;;AAED,oBAAK,yBAAL","file":"index.js","sourcesContent":["﻿import test from './test';\r\n\r\ntest('bable is still working2');\r\n\r\n"]}

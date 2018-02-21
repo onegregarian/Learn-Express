@@ -7,8 +7,8 @@ import logger from 'morgan';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 
-import routes from './routes/index';
-import users from './routes/users'
+import routes from './../routes/index';
+import users from './../routes/users'
 
 //using let
 let app = express();
@@ -51,10 +51,10 @@ app.use((err, req, res, next) => {
 });
 
 
+app.set('port', process.env.PORT || 3000);
+
+var server = app.listen(app.get('port'), () => {
+    console.log('Express server listening on port ' + server.address().port);
+});
+
 module.exports = app;
-
-//app.set('port', process.env.PORT || 3000);
-
-//var server = app.listen(app.get('port'), function () {
-//    debug('Express server listening on port ' + server.address().port);
-//});

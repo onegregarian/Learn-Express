@@ -30,21 +30,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
-    <Compile Include="bin\dev.js">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="bin\production.js">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="dist\index.js" />
+    <Compile Include="dist\test.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="routes\users.js" />
-    <Compile Include="server\index.bable.js" />
-    <Compile Include="server\index.js">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="server\test.js">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="src\index.js" />
+    <Compile Include="src\test.js" />
     <Content Include=".babelrc">
       <SubType>Code</SubType>
     </Content>
@@ -56,8 +47,8 @@
     <Content Include="views\error.pug" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="bin\" />
-    <Folder Include="server\" />
+    <Folder Include="dist\" />
+    <Folder Include="src\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />
