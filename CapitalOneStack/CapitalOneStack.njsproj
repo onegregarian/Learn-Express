@@ -12,7 +12,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>bb518f6d-59c8-48c7-b205-614eef5b3ab7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>server\index.js</StartupFile>
+    <StartupFile>./dist/app.js</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -29,35 +29,61 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="app.js">
+    <Compile Include="dist\app.js" />
+    <Compile Include="dist\models\measurement.js" />
+    <Compile Include="dist\models\MeasurementReadings.js" />
+    <Compile Include="dist\models\metric.js" />
+    <Compile Include="dist\models\Statistic.js" />
+    <Compile Include="dist\routes\index.js" />
+    <Compile Include="dist\routes\measurements.js" />
+    <Compile Include="dist\routes\stats.js" />
+    <Compile Include="models\measurement.js">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="server\index.js">
+    <Compile Include="models\MeasurementReadings.js">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="routes\index.js">
+    <Compile Include="models\metric.js">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="server.js" />
-    <Compile Include="server\test.js">
+    <Compile Include="models\Statistic.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\app.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\models\measurement.js" />
+    <Compile Include="src\models\MeasurementReadings.js" />
+    <Compile Include="src\models\metric.js" />
+    <Compile Include="src\models\Statistic.js" />
+    <Compile Include="src\routes\index.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\routes\measurements.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\routes\stats.js">
       <SubType>Code</SubType>
     </Compile>
     <Content Include=".babelrc">
       <SubType>Code</SubType>
     </Content>
     <Content Include="package.json" />
-    <Content Include="public\stylesheets\main.css" />
+    <Content Include="views\error.jade" />
+    <Content Include="views\index.jade" />
+    <Content Include="views\layout.jade" />
     <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="dist\" />
+    <Folder Include="dist\models\" />
     <Folder Include="models\" />
-    <Folder Include="server\" />
     <Folder Include="public\" />
-    <Folder Include="public\images\" />
-    <Folder Include="public\javascripts\" />
-    <Folder Include="public\stylesheets\" />
-    <Folder Include="routes\" />
+    <Folder Include="src\models\" />
     <Folder Include="views\" />
+    <Folder Include="dist\routes\" />
+    <Folder Include="src\" />
+    <Folder Include="src\routes\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
