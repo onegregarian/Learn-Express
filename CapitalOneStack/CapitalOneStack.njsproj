@@ -52,10 +52,9 @@
     <Compile Include="src\app.js">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="src\models\measurement.js" />
-    <Compile Include="src\models\MeasurementReadings.js" />
-    <Compile Include="src\models\metric.js" />
-    <Compile Include="src\models\Statistic.js" />
+    <Compile Include="src\components\MeasurementReadings.js" />
+    <Compile Include="src\components\metric.js" />
+    <Compile Include="src\components\Statistic.js" />
     <Compile Include="src\routes\index.js">
       <SubType>Code</SubType>
     </Compile>
@@ -79,7 +78,7 @@
     <Folder Include="dist\models\" />
     <Folder Include="models\" />
     <Folder Include="public\" />
-    <Folder Include="src\models\" />
+    <Folder Include="src\components\" />
     <Folder Include="views\" />
     <Folder Include="dist\routes\" />
     <Folder Include="src\" />

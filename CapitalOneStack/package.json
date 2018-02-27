@@ -21,6 +21,8 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
-    "jade": "^1.11.0"
+    "express-validation": "^1.0.2",
+    "jade": "^1.11.0",
+    "joi": "^13.1.2"
   }
 }
